@@ -1,19 +1,361 @@
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link rel="icon" href="images/team1.jng" type="image/png" />
-        <title>Joe Low's DS Portfolio</title>
-    
-        <!-- Bootstrap CSS -->
-    
-        <!-- main css -->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-      </head>
+    <html lang="en">
+        <head>
+          <!-- Required meta tags -->
+          <meta charset="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
+          <link rel="icon" href="images/team1.jng" type="image/png" />
+          <title>Chan Chun Yuan's DS Portfolio</title>
+      
+          <!-- Bootstrap CSS -->
+      
+          <!-- main css -->
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        </head>
+      
+        <style>
+          body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+          body {font-size:16px;}
+          .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+          .w3-half img:hover{opacity:1}
+        </style>
+      
+        <!--================Header Menu Area =================-->
+        <header class="top_menu w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+          <!-- Top menu on small screens -->
+          <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+          <span>Chan Chun Yuan's Data Science Portfolio</span>
+        </header>
+      
+        <header class="side_menu">
+          <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" 
+               style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+            
+            <a href="javascript:void(0)" onclick="w3_close()" 
+              class="w3-button w3-hide-large w3-display-topleft w3-hover-white" 
+              style="width:100%;font-size:30px">✖</a>
+            
+            <div class="w3-container">
+              <h3 class="w3-padding-64" ><b><!-- Insert others here --><br><!-- Insert others here --> </b></h3>
+            </div>
+            
+            <div class="w3-bar-block">
+              <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-home" style="font-size:20px;color:white;padding-right: 15px"></i>Home</a> 
+              <a href="#about-me" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-user-alt" style="font-size:20px;color:white;padding-right: 15px"></i>About me</a> 
+              <a href="#methodology" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-tools" style="font-size:20px;color:white;padding-right: 15px"></i>Methodology</a> 
+              <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-tasks" style="font-size:20px;color:white;padding-right: 15px"></i>Projects</a> 
+              <a href="#template" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fas fa-file-alt" style="font-size:20px;color:white;padding-right: 15px"></i>Template</a> 
+              <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-phone-alt" style="font-size:20px;color:white;padding-right: 15px"></i>Contact</a>
+            </div>
+          </nav>
+      
+          <!-- Overlay effect when opening sidebar on small screens -->
+          <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+        </header>
+        <!--================Header Menu Area =================-->
+      
+        <!--================ Start Portfolio Area =================-->
+        <section class="section_gap portfolio_area" id="work">
+          <div class="w3-main" style="margin-left:340px;margin-right:40px">
+          
+          <!-- Header -->
+          <div class="w3-container" style="margin-top:80px" id="header">
+            <h1 class="w3-jumbo"><b>Chan Chun Yuan's <br>Data Science Portfolio</b></h1>
+          </div>
+      
+          <!-- About me -->
+          <div class="w3-container" style="margin-top:30px" id="about-me">
+            <h1 class="w3-xxxlarge w3-text-red"><i class="fa fa-user-alt" style="font-size:40px;color:red;padding-right: 15px"></i><b>About me.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p><h1 class="w3-xlarge w3-text-black"><b>Welcome!</b></h1></p>
+            <p>Aspiring Data Scientist during my free time, Perspiring Engineer by practice!
+            <br>I am actively looking for a career in data science. Contact me to see what I can bring to the table!
+          </div>
+      
+          <!--Methodology -->
+          <div class="w3-container" style="margin-top:30px" id="methodology">
+            <h1 class="w3-xxxlarge w3-text-red"><i class="fas fa-tools" style="font-size:40px;color:red;padding-right: 15px"></i><b>Methodology.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p>Particularly, the OSEMN framework is adopted for all of my data science projects. 
+              <br>Why so, you may ask? Well, the OSEMN framework detailed a pragmatic approach for the entirety of a data science project. 
+              <br>Also, at every stage of the workflow, tuning process can be repeated until a satisfactory condition is met. 
+              <br>
+              <br>The OSEMN workflow is an acronym of the following: 
+                <ul>
+                  <li><b style="color:red">O</b><span style="padding-left:7px"></span>: <b style="color:red">O</b>btain data</li>
+                  <li><b style="color:red">S</b><span style="padding-left:10px"></span>: <b style="color:red">S</b>crub/clean data</li>
+                  <li><b style="color:red">E</b><span style="padding-left:11px"></span>: <b style="color:red">E</b>xplore/visualizing data to find patterns or trends</li>
+                  <li><b style="color:red">M</b><span style="padding-left:5px"></span>: <b style="color:red">M</b>odelling</li>
+                  <li><b style="color:red">N</b><span style="padding-left:7px"></span>: i<b style="color:red">N</b>terpret</li>
+                </ul>
+        
+            <p>For further reference, here is a good write up by Dr. Lau on OSEMN framework:
+            <a href="https://towardsdatascience.com/5-steps-of-a-data-science-project-lifecycle-26c50372b492"><i class="fab fa-medium" style="font-size:20px;color:red;padding-right: 15px"></i></a> </p>
+          </div>
+      
+          <!-- Projects -->
+          <div class="w3-container" style="margin-top:30px" id="projects">
+          <h1 class="w3-xxxlarge w3-text-red"><i class="fa fa-tasks" style="font-size:40px;color:red;padding-right: 15px"></i><b>Project.</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+      
+          <p><h1 class="w3-xlarge w3-text-black"><b>#1 Telco Churn Analytics</b>
+                <a href="https://colab.research.google.com/drive/1Kme2-wEPT3qVs68PsDqoQ5PkSakUlSIS?usp=sharing">
+                  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+                </a>
+              </h1>
+            <ul>        
+              <li>Business question<span style="padding-left:68px">:</span> How likely is a customer to churn depending on their subscription plan? </li>
+              <li>Exploratory data analysis<span style="padding-left:10px">:</span></li>
+            </ul>
+            <!-- EDA -->
+            <div class="w3-row-padding">
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                  <img src="images/1_Heatmap.png" alt="Heatmap" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity " height="225" href="#portfolioModal1">
+                  <!-- <div class="w3-container">
+                    <h3>Heatmap</h3>
+                  </div> -->
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey ">
+                  <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button w3-black">John Doe</button>
+                  </div>
+                  <img src="images/1_Countplot.png" alt="Count plot" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" height="225">
+                  <!-- <div class="w3-container ">
+                    <h3>Count plot</h3>
+                  </div> -->
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                  <img src="images/1_Stackedplot.png" alt="Bar plot" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" height="225">
+                  <!-- <div class="w3-container">
+                    <h3>Bar plot</h3>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <ul>        
+              <li>Machine learning model<span style="padding-left:17px">:</span> Decision Tree </li>
+      <!--         <li>Actionable insights<span style="padding-left:59px">:</span></li>
+              <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ol>  -->
+            </ul></p>
+      
+          <p><h1 class="w3-xlarge w3-text-black"><b>#2 Sales Forecasting based on Ads Expenditures</b>
+              <a href="https://colab.research.google.com/drive/1szJQYQ6Tp23G1HwjHABXz9QvlLLxPre7?usp=sharing">
+                <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+              </a>
+            </h1>   
+            <ul>        
+              <li>Business question<span style="padding-left:68px">:</span> What is the sales forecast after advertistement expenditures on different platform? </li>
+              <li>Exploratory data analysis<span style="padding-left:10px">:</span></li>
+            </ul>
+            <!-- EDA -->
+            <div class="w3-row-padding">
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                  <img src="images/2_Regplot.png" alt="Heatmap" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity " height="225" href="#portfolioModal1">
+                  <!-- <div class="w3-container">
+                    <h3>Heatmap</h3>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+              
+            <ul>        
+              <li>Machine learning model<span style="padding-left:17px">:</span> Linear Regression</li>
+      <!--         <li>Actionable insights<span style="padding-left:59px">:</span></li>
+              <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ol>  -->
+            </ul></p>
+      
+          <p><h1 class="w3-xlarge w3-text-black"><b>#3 Natural Language Processing (Sentiments Analysis)</b>
+            <a href="https://colab.research.google.com/drive/1HZC0O83NFhVQ3GsHW-X-7zK0rh3Vrnj3?usp=sharing">
+              <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+            </a></h1>   
+            <ul>        
+              <li>Business question<span style="padding-left:68px">:</span> What is the sales forecast after advertistement expenditures on different platform? </li>
+              <li>Exploratory data analysis<span style="padding-left:10px">:</span></li>
+            </ul>
+            <!-- EDA -->
+            <div class="w3-row-padding">
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                  <img src="images/3_MostUsed.png" alt="Heatmap" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity " height="225" href="#portfolioModal1">
+                  <!-- <div class="w3-container">
+                    <h3>Heatmap</h3>
+                  </div> -->
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey ">
+                  <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button w3-black">John Doe</button>
+                  </div>
+                  <img src="images/3_Rating 1.png" alt="Count plot" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" height="225">
+                  <!-- <div class="w3-container ">
+                    <h3>Count plot</h3>
+                  </div> -->
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                  <img src="images/3_Rating 5.png" alt="Bar plot" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" height="225">
+                  <!-- <div class="w3-container">
+                    <h3>Bar plot</h3>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <ul>        
+              <li>Machine learning model<span style="padding-left:17px">:</span> Natural Learning Toolkit </li>
+              <li></li>
+      <!--         <li>Actionable insights<span style="padding-left:59px">:</span></li>
+              <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ol>  -->
+            </ul></p>
+      
+            <p><h1 class="w3-xlarge w3-text-black"><b>#4 Human Resource Attrition</b>
+              <a href="https://colab.research.google.com/drive/1DZ_SupvaaHL2KzKyxd8C20XWnd7KzP1P?usp=sharing">
+                <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+              </a></h1>   
+                <ul>        
+                  <li>Business question<span style="padding-left:68px">:</span> How likely is a staff leaving the company under different circumstances?</li>
+                  <li>Exploratory data analysis<span style="padding-left:10px">:</span></li>
+                </ul>
+                <!-- EDA -->
+                <div class="w3-row-padding">
+                  <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                      <img src="images/4_Heatmap.png" alt="Heatmap" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity " height="225" href="#portfolioModal1">
+                      <!-- <div class="w3-container">
+                        <h3>Heatmap</h3>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey ">
+                      <div class="w3-display-middle w3-display-hover">
+                        <button class="w3-button w3-black">John Doe</button>
+                      </div>
+                      <img src="images/4_Countplot.png" alt="Count plot" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" height="225">
+                      <!-- <div class="w3-container ">
+                        <h3>Count plot</h3>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                      <img src="images/4_Histogram.png" alt="Bar plot" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" height="225">
+                      <!-- <div class="w3-container">
+                        <h3>Bar plot</h3>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <ul>        
+                  <li>Machine learning model<span style="padding-left:17px">:</span> Logistics Regression </li>
+      <!--             <li>Actionable insights<span style="padding-left:59px">:</span></li>
+                  <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                  </ol>  -->
+                </ul></p>
+                <ul>
+                  <li>Dashboard<span style="padding-left:10px">:</span></li>
+                </ul>
+                <div class="w3-light-grey">
+                  <iframe width="900" height="800" src="https://datastudio.google.com/embed/reporting/28905606-5606-4600-b16b-bbd991a0f696/page/FigKC" frameborder="0" style="width:100%; border:0" allowfullscreen></iframe>
+                </div>
+           
+             
+          <!-- Template -->
+          <div class="w3-container" id="template" style="margin-top:30px">
+            <h1 class="w3-xxxlarge w3-text-red"><i class="fas fa-file-alt" style="font-size:40px;color:red;padding-right: 15px"></i><b>Template.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p><h1 class="w3-xlarge w3-text-black"><b>Personal Cookbook</b>
+              <a href="https://colab.research.google.com/drive/1COcNTeUIl29XcjhCtlN-QzXatOSTROXS?usp=sharing">
+                <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+              </a></h1>
+            If you happen to be a novice visiting my portfolio, here is my personal template for the completed projects. Hope it helps in your learning path!<br>
+            If you happen to be a practitioner, please let me know if you guys have any feedback! Your thoughts are very much appreciated and welcomed!
+          </div>
+      
+            <!-- Contact -->
+            <div class="w3-container" id="contact" style="margin-top:30px">
+              <h1 class="w3-xxxlarge w3-text-red"><i class="fas fa-phone-alt" style="font-size:40px;color:red;padding-right: 15px"></i><b>Contact.</b></h1>
+              <hr style="width:50px;border:5px solid red" class="w3-round">
+              <p>Connect with me!</p>
+              <div class="social-network">
+                <a href="https://www.linkedin.com/in/chanchunyuan/"><i class="fab fa-linkedin" style="font-size:48px;color:red;padding-right: 15px"></i></a>
+                <a href="https://github.com/sccyds"><i class="fab fa-github" style="font-size:40px;color:red;padding-right: 15px"></i></a> 
+              </div>
+            </div> 
+          </div>    
+        
+        </section>
+        <!--================ End Portfolio Area =================-->
+      
+        <!--================ Start Footer Area =================-->
+        <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">PS: I don't bite and love meeting new people!</p></div>
+       
+        <!--================End Footer Area =================-->
+        
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+          <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+          
+          <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption"></p>
+      
+          </div>
+      
+         
+      
+        </div>
+      
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script>
+          // Script to open and close sidebar
+          function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+          }
+          
+          function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+          }
+      
+          // Modal Image Gallery
+          function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+          }
+        </script>
+      </body>
+      </html>
+      
 </html>
